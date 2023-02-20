@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-OffWhite flex justify-center items-start w-screen h-screen select-none font-Inter scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./output.css">
+  <link rel="font" href="./assets/fonts/Inter-VariableFont_slnt,wght.ttf">
+  <title>Frontend Mentor | News homepage</title>
+</head>
+<body class="grid grid-cols-1 justify-start items-center lg:max-w-screen-lg lg:mx-3 sm:max-w-full h-full overflow-x-hidden">
+  <nav style="max-width: 1024px; width: 100%;" class="col-span-1 sticky top-0 bg-OffWhite flex flex-nowrap justify-between items-center py-12 z-20 border-y-GrayishBlue sm:flex-wrap sm:py-5 sm:px-4">
+    <img src="./assets/images/logo.svg" />
+    <button type="button" id="menuToggler" class="outline-none flex flex-col lg:invisible sm:visible sm:py-3 z-40">
+      <span id="top" class="transition-all bg-VeryDarkBlue h-1 w-11 -translate-y-1"></span>
+      <span id="middle" class="transition-all bg-VeryDarkBlue h-1 w-11"></span>
+      <span id="bottom" class="transition-all bg-VeryDarkBlue h-1 w-11 translate-y-1"></span>
+    </button>
+    <div id="navLinks" class="bg-VeryDarkBlue/50 transition-transform translate-x-full w-full lg:hidden sm:flex sm:absolute sm:top-0 right-0 sm:shadow-2xl">
+      <button id="space" class="block w-1/2 h-screen"></button>
+      <ul class="gap-6 lg:hidden sm:flex sm:bg-OffWhite sm:flex-col sm:justify-center sm:items-start sm:w-full sm:h-screen sm:p-8 -z-0">
+        <li class="block w-full text-VeryDarkBlue text-lg font-medium hover:text-SoftRed cursor-pointer"><a href="#Home"></a>Home</li>
+        <li class="block w-full text-VeryDarkBlue text-lg font-medium hover:text-SoftRed cursor-pointer"><a href="#New"></a>New</li>
+        <li class="block w-full text-VeryDarkBlue text-lg font-medium hover:text-SoftRed cursor-pointer"><a href="#Popular"></a>Popular</li>
+        <li class="block w-full text-VeryDarkBlue text-lg font-medium hover:text-SoftRed cursor-pointer"><a href="#Trending"></a>Trending</li>
+        <li class="block w-full text-VeryDarkBlue text-lg font-medium hover:text-SoftRed cursor-pointer"><a href="#Categories"></a>Categories</li>
+      </ul>
+    </div>
+    <ul class="gap-8 lg:flex lg:flex-row sm:hidden">
+      <li class="text-DarkGrayishBlue hover:text-SoftRed cursor-pointer"><a href="#Home"></a>Home</li>
+      <li class="text-DarkGrayishBlue hover:text-SoftRed cursor-pointer"><a href="#New"></a>New</li>
+      <li class="text-DarkGrayishBlue hover:text-SoftRed cursor-pointer"><a href="#Popular"></a>Popular</li>
+      <li class="text-DarkGrayishBlue hover:text-SoftRed cursor-pointer"><a href="#Trending"></a>Trending</li>
+      <li class="text-DarkGrayishBlue hover:text-SoftRed cursor-pointer"><a href="#Categories"></a>Categories</li>
+    </ul>
+  </nav>
+  <main class="grid grid-cols-3 gap-8 h-full sm:px-3 sm:scroll-py-3 overflow-y-auto z-10">
+    <!-- First section -->
+    <section class="col-span-2 flex flex-wrap flex-col gap-10 w-auto sm:col-span-full">
+      <picture>
+        <source media="(max-width:600px)" srcset="./assets/images/image-web-3-mobile.jpg">
+        <source media="(max-width:900px)" srcset="./assets/images/image-web-3-desktop.jpg">
+        <img src="./assets/images/image-web-3-desktop.jpg">
+      </picture>
+    </section>
+
+    <!-- Second section -->
+    <section class="col-span-1 sm:col-span-full">
+      <h1 class="font-extrabold text-5xl w-full sm:text-4xl">
+        The Bright Future of Web 3.0?
+      </h1>
+    </section>
+
+    <!-- Third section -->
+    <section class="flex flex-col justify-between items-start w-full sm:gap-4 sm:col-span-full">
+      <p class="text-DarkGrayishBlue">
+        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+        But is it really fulfilling its promise?
+      </p>
+      <button class="bg-SoftRed hover:bg-VeryDarkBlue font-medium text-sm text-OffWhite uppercase tracking-widest px-7 py-2.5">
+        Read more
+      </button>
+    </section>
+      
+    <!-- Fourth section -->
+    <section class="col-start-3 row-end-3 row-span-full flex flex-col gap-4 justify-center items-start bg-VeryDarkBlue p-6 sm:col-span-full sm:row-end-auto sm:row-span-4"> 
+      <h2 class="text-SoftOrange text-3xl font-bold">New</h2>
+      <ul class="flex flex-col gap-8 divide-DarkGrayishBlue">
+        <li class="flex flex-col gap-2">
+          <a><h3 class="text-OffWhite hover:text-SoftOrange cursor-pointer font-bold text-base">Hydrogen VS Electric Cars</h3></a>
+          <p class="text-GrayishBlue">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </li>
+        <hr>
+        <li class="flex flex-col gap-2">
+          <a><h3 class="text-OffWhite hover:text-SoftOrange cursor-pointer font-bold text-base">The Downsides of AI Artistry</h3></a>
+          <p class="text-GrayishBlue">What are the possible adverse effects of on-demand AI image generation?</p>
+        </li>
+        <hr>
+        <li class="flex flex-col gap-2">
+          <a><h3 class="text-OffWhite hover:text-SoftOrange cursor-pointer font-bold text-base">Is VC Funding Drying Up?</h3></a>
+          <p class="text-GrayishBlue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </li>
+      </ul>
+    </section>
+    
+    <!-- Fifth section -->
+    <section class="flex gap-6 col-start-1 order-1 w-full my-10 cursor-pointer sm:my-0 sm:col-span-full"> 
+      <img width="90px" src="./assets/images/image-retro-pcs.jpg" />
+      <span class="flex flex-col justify-between">
+        <h1 class="text-3xl text-GrayishBlue font-bold">01</h1>
+        <h4 class="text-VeryDarkBlue font-black hover:text-SoftRed">Reviving Retro PCs</h4>
+        <p class="text-DarkGrayishBlue text-sm">What happens when old PCs are given modern upgrades?</p>
+      </span>
+    </section>
+
+    <!-- Sixth section -->
+    <section class="flex gap-6 col-start-2 order-2 w-full my-10 cursor-pointer sm:my-0 sm:col-span-full">
+      <img width="90px" src="./assets/images/image-top-laptops.jpg" />
+      <span class="flex flex-col justify-between">
+        <h1 class="text-3xl text-GrayishBlue font-bold">02</h1>
+        <h4 class="text-VeryDarkBlue font-black hover:text-SoftRed">Top 10 Laptops of 2022</h4>
+        <p class="text-DarkGrayishBlue text-sm">Our best picks for various needs and budgets.</p>
+      </span>
+    </section>
+    
+    <!-- Seventh section -->
+    <section class="flex gap-6 col-start-3 order-3 w-full my-10 cursor-pointer sm:my-0 sm:pb-3 sm:col-span-full">
+      <img width="90px" src="./assets/images/image-gaming-growth.jpg" />
+      <span class="flex flex-col justify-between">
+        <h1 class="text-3xl text-GrayishBlue font-bold">03</h1>
+        <h4 class="text-VeryDarkBlue font-black hover:text-SoftRed">The Growth of Gaming</h4>
+        <p class="text-DarkGrayishBlue text-sm">How the pandemic has sparked fresh opportunities.</p>
+      </span>
+    </section>
+  </main>
+  
+  <footer class="flex flex-wrap gap-2 justify-center items-center bg-OffWhite text-sm text-DarkGrayishBlue p-1.5 w-full border-t border-t-GrayishBlue">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p>Created by <a href="https://vaibhav202.github.io">Vaibhav Pancholi</a>.</p>
+  </footer>
+  <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
