@@ -8,39 +8,39 @@
   <link rel="font" href="./assets/fonts/Inter-VariableFont_slnt,wght.ttf">
   <title>Frontend Mentor | News homepage</title>
 </head>
-<body class="grid grid-cols-1 justify-start items-center lg:max-w-screen-lg lg:mx-3 sm:max-w-full h-full overflow-x-hidden">
+<body class="grid grid-cols-1 justify-start items-center lg:max-w-screen-lg sm:max-w-full h-full overflow-x-hidden">
   <nav style="max-width: 1024px; width: 100%;" class="col-span-1 sticky top-0 bg-OffWhite flex flex-nowrap justify-between items-center py-12 z-20 border-y-GrayishBlue sm:flex-wrap sm:py-5 sm:px-4">
-    <img src="./assets/images/logo.svg" alt=" alt=""" />
-    <button type="button" id="menuToggler" class="outline-none flex flex-col lg:invisible sm:visible sm:py-3 z-40">
-      <span id="top" class="transition-all bg-VeryDarkBlue h-1 w-11 -translate-y-1"></span>
-      <span id="middle" class="transition-all bg-VeryDarkBlue h-1 w-11"></span>
-      <span id="bottom" class="transition-all bg-VeryDarkBlue h-1 w-11 translate-y-1"></span>
+    <img src="./assets/images/logo.svg" alt=""/>
+    <button type="button" id="menuToggler" class="outline-none flex flex-col justify-center items-center overflow-hidden lg:invisible sm:visible sm:px-5 sm:py-3 z-40">
+      <span id="top" class="transition-all absolute bg-VeryDarkBlue h-1 w-11 -translate-y-2"></span>
+      <span id="middle" class="transition-all absolute bg-VeryDarkBlue h-1 w-11"></span>
+      <span id="bottom" class="transition-all absolute bg-VeryDarkBlue h-1 w-11 translate-y-2"></span>
     </button>
     <div id="navLinks" class="bg-VeryDarkBlue/50 transition-transform translate-x-full w-full lg:hidden sm:flex sm:absolute sm:top-0 right-0 sm:shadow-2xl">
       <button id="space" class="block w-1/2 h-screen"></button>
-      <ul class="gap-6 lg:hidden sm:flex sm:bg-OffWhite sm:flex-col sm:justify-center sm:items-start sm:w-full sm:h-screen sm:p-8 -z-0">
-        <li class="block w-full text-VeryDarkBlue text-lg font-medium hover:text-SoftRed cursor-pointer"><a href="#Home"></a>Home</li>
-        <li class="block w-full text-VeryDarkBlue text-lg font-medium hover:text-SoftRed cursor-pointer"><a href="#New"></a>New</li>
-        <li class="block w-full text-VeryDarkBlue text-lg font-medium hover:text-SoftRed cursor-pointer"><a href="#Popular"></a>Popular</li>
-        <li class="block w-full text-VeryDarkBlue text-lg font-medium hover:text-SoftRed cursor-pointer"><a href="#Trending"></a>Trending</li>
-        <li class="block w-full text-VeryDarkBlue text-lg font-medium hover:text-SoftRed cursor-pointer"><a href="#Categories"></a>Categories</li>
+      <ul class="gap-6 lg:hidden sm:flex sm:bg-OffWhite sm:flex-col sm:justify-start sm:items-start sm:w-full sm:h-screen sm:pt-28 sm:p-8 -z-0">
+        <li class="block w-full text-VeryDarkBlue text-lg font-medium hover:text-SoftRed cursor-pointer"><a href="#Home">Home</a></li>
+        <li class="block w-full text-VeryDarkBlue text-lg font-medium hover:text-SoftRed cursor-pointer"><a href="#New">New</a></li>
+        <li class="block w-full text-VeryDarkBlue text-lg font-medium hover:text-SoftRed cursor-pointer"><a href="#Popular">Popular</a></li>
+        <li class="block w-full text-VeryDarkBlue text-lg font-medium hover:text-SoftRed cursor-pointer"><a href="#Trending">Trending</a></li>
+        <li class="block w-full text-VeryDarkBlue text-lg font-medium hover:text-SoftRed cursor-pointer"><a href="#Categories">Categories</a></li>
       </ul>
     </div>
     <ul class="gap-8 lg:flex lg:flex-row sm:hidden">
-      <li class="text-DarkGrayishBlue hover:text-SoftRed cursor-pointer"><a href="#Home"></a>Home</li>
-      <li class="text-DarkGrayishBlue hover:text-SoftRed cursor-pointer"><a href="#New"></a>New</li>
-      <li class="text-DarkGrayishBlue hover:text-SoftRed cursor-pointer"><a href="#Popular"></a>Popular</li>
-      <li class="text-DarkGrayishBlue hover:text-SoftRed cursor-pointer"><a href="#Trending"></a>Trending</li>
-      <li class="text-DarkGrayishBlue hover:text-SoftRed cursor-pointer"><a href="#Categories"></a>Categories</li>
+      <li class="text-DarkGrayishBlue hover:text-SoftRed cursor-pointer"><a href="#Home">Home</a></li>
+      <li class="text-DarkGrayishBlue hover:text-SoftRed cursor-pointer"><a href="#New">New</a></li>
+      <li class="text-DarkGrayishBlue hover:text-SoftRed cursor-pointer"><a href="#Popular">Popular</a></li>
+      <li class="text-DarkGrayishBlue hover:text-SoftRed cursor-pointer"><a href="#Trending">Trending</a></li>
+      <li class="text-DarkGrayishBlue hover:text-SoftRed cursor-pointer"><a href="#Categories">Categories</a></li>
     </ul>
   </nav>
-  <main class="grid grid-cols-3 gap-8 h-full sm:px-3 sm:scroll-py-3 overflow-y-auto z-10">
+  <main class="grid grid-cols-3 gap-8 h-full sm:px-3 overflow-y-auto z-10">
     <!-- First section -->
     <section class="col-span-2 flex flex-wrap flex-col gap-10 w-auto sm:col-span-full">
       <picture>
         <source media="(max-width:600px)" srcset="./assets/images/image-web-3-mobile.jpg">
         <source media="(max-width:900px)" srcset="./assets/images/image-web-3-desktop.jpg">
-        <img src="./assets/images/image-web-3-desktop.jpg">
+        <img src="./assets/images/image-web-3-desktop.jpg" alt="">
       </picture>
     </section>
 

@@ -11,21 +11,21 @@ function menuToggler() {
         //For opening the menu
         navLinks.classList.toggle("translate-x-full");
         //Changing menu icon to look a like close icon
-        first.classList.toggle("translate-y-1");
-        first.classList.toggle("-rotate-45");
-        middle.classList.toggle("hidden");
-        bottom.classList.toggle("translate-y-0");
-        bottom.classList.toggle("rotate-45");
+        first.classList.toggle("-translate-y-2");
+        first.classList.toggle("rotate-45");
+        middle.classList.toggle("scale-x-0");
+        bottom.classList.toggle("translate-y-2");
+        bottom.classList.toggle("-rotate-45");
     }
     else {
         //For closing the menu
         navLinks.classList.toggle("translate-x-full");
 
         //Falling back to default icon
-        first.classList.toggle("translate-y-1");
-        first.classList.toggle("-rotate-45");
-        middle.classList.toggle("hidden");
-        bottom.classList.toggle("translate-y-0");
-        bottom.classList.toggle("rotate-45");
+        first.classList.toggle("-translate-y-2");
+        first.classList.toggle("rotate-45");
+        middle.classList.toggle("scale-x-0");
+        bottom.classList.toggle("translate-y-2");
+        bottom.classList.toggle("-rotate-45");
     }
 }
