@@ -1,6 +1,6 @@
 var btn = document.getElementById("menuToggler");
 var menuClosingSpace = document.getElementById("space");
-var navLinks = document.getElementById("navLinks");
+var linksContainer = document.getElementById("linksContainer");
 var first = document.getElementById("top");
 var middle = document.getElementById("middle");
 var bottom = document.getElementById("bottom");
@@ -9,7 +9,9 @@ menuClosingSpace.addEventListener('click', menuToggler);
 function menuToggler() {
     if(btn.classList.contains("sm:visible") == true) {
         //For opening the menu
-        navLinks.classList.toggle("translate-x-full");
+        menuClosingSpace.classList.toggle("opacity-0");
+        linksContainer.classList.toggle("translate-x-full");
+
         //Changing menu icon to look a like close icon
         first.classList.toggle("-translate-y-2");
         first.classList.toggle("rotate-45");
@@ -19,7 +21,8 @@ function menuToggler() {
     }
     else {
         //For closing the menu
-        navLinks.classList.toggle("translate-x-full");
+        menuClosingSpace.classList.toggle("opacity-0");
+        linksContainer.classList.toggle("translate-x-full");
 
         //Falling back to default icon
         first.classList.toggle("-translate-y-2");
